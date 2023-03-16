@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let id;
+    let pass;
+    let adre;
+
+    const div = document.createElement('div');
+    document.body.appendChild(div);
+
+    const root = document.body.children[1];
+
+    const form = document.createElement('form');
+    form.setAttribute('action','index.html');
+    form.setAttribute('method','POST');
+    root.appendChild(form);
+
+    for(i=0; i<4; i++){
+      const input = document.createElement('input');
+      input.setAttribute('type','text');
+      input.setAttribute('name','id');
+      form.appendChild(input);
+      if(i===3){
+        input.setAttribute('type','submit');
+      }
+    }
+    // id = form.children[0].value;
+    // pass = form.children[1].value;
+    // adre = form.children[2].value;
+
+    id = 'dadada';
+    pass = 'dda';
+    adre = 'dada';
+
+  </script>
+  <script type="module" src="./db_test.js"></script>
+</body>
+</html>
